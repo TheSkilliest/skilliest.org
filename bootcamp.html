@@ -3,107 +3,531 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhD Bootcamp | Skilliest.org</title>
+    <meta name="description" content="Join Skilliest.org Bootcamp - Cohort-based mentorship to secure fully-funded PhDs through AI-driven execution and proven frameworks.">
+    <title>Bootcamp - Skilliest.org</title>
     <link rel="icon" type="image/png" href="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770860254/png-logo-Icon-only-or-favicon-144x144-pixels_n61o7b.png">
-    
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <div class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770860255/png-logo-1920x1080-pixels-with-brand-name-and-tagline-horizontal-layout_ilrbqw.png" alt="Skilliest Logo">
-                </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770860255/png-logo-1920x1080-pixels-with-brand-name-and-tagline-horizontal-layout_ilrbqw.png" alt="Skilliest.org Logo" class="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#founder">Founder Story</a>
+                <a href="https://forms.gle/nMxmCnMzdEL4VUKG7" target="_blank" class="btn-nav">Apply Now</a>
             </div>
-            <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="bootcamp.html" class="active">Bootcamp</a></li>
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqEfmPhU0R6nT1a2ifJd7MYZd9fzPEokfsSQaUDKCapEApDg/viewform?usp=publish-editor" target="_blank" class="btn btn-outline" style="padding: 8px 20px; border-radius: 50px; font-size: 0.9rem;">Free Assessment</a></li>
-                </ul>
-            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="index.html#founder">Founder Story</a>
+        <a href="https://forms.gle/nMxmCnMzdEL4VUKG7" target="_blank" class="btn-primary">Apply Now</a>
+    </div>
+
+    <!-- Bootcamp Hero -->
     <section class="bootcamp-hero">
         <div class="container">
-            <h1 class="text-highlight">The PhD Action Bootcamp</h1>
-            <p style="max-width: 700px; margin: 20px auto;">A founder-led, cohort-based mentorship program. We replace generic advice with live action sessions, automated outreach systems, and proven strategies.</p>
-            <div style="margin-top: 40px;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWuuuJr1bukrQ2evvsZx0vA4TUmICPddx5T-BBhduPOeOgtQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">Apply for Next Cohort</a>
+            <div class="bootcamp-hero-content">
+                <div class="hero-badge">Limited Slots Available</div>
+                <h1 class="hero-title">
+                    Secure Your <span class="highlight-gradient">Fully-Funded PhD</span><br>Through AI-Driven Execution
+                </h1>
+                <p class="hero-subtitle">
+                    Cohort-based mentorship with live action sessions, automated outreach systems, and proven frameworks built from real experience. Not another generic consultancy—this is execution-focused bootcamp. <strong>Send unlimited emails and try every possible opportunity so you never regret not trying!</strong>
+                </p>
+                <div class="hero-cta">
+                    <a href="https://forms.gle/nMxmCnMzdEL4VUKG7" target="_blank" class="btn-primary btn-large">Apply to Bootcamp</a>
+                    <a href="https://forms.gle/rr5n1KwGViJboKJd6" target="_blank" class="btn-secondary btn-large">Free Assessment</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="bootcamp-includes">
+        <div class="container">
+            <div class="section-header center">
+                <div class="section-tag">What's Included</div>
+                <h2>Complete System from Scratch to PhD Offer</h2>
+                <p>Everything you need, with nothing left to chance</p>
+            </div>
+
+            <div class="includes-grid">
+                <div class="include-card spotlight">
+                    <div class="include-icon">🤖</div>
+                    <h3>AI-Powered Outreach System</h3>
+                    <p>Complete setup of automated bulk email writing, sending, and follow-up. <strong>Send unlimited emails to thousands of professors worldwide!</strong></p>
+                    <ul class="feature-list">
+                        <li>Write ~2500 emails for just $1</li>
+                        <li>Send 500 emails/day for free</li>
+                        <li>Unlimited capacity with our framework</li>
+                        <li>Automated follow-ups every few days</li>
+                        <li>All software, APIs, and tools included</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">👨‍💼</div>
+                    <h3>Profile & CV Optimization</h3>
+                    <ul class="feature-list">
+                        <li>Present your profile to stand out</li>
+                        <li>CV building and presentation</li>
+                        <li>LinkedIn and personal website building</li>
+                        <li>Research interests definition</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">✉️</div>
+                    <h3>Cold Email Mastery</h3>
+                    <ul class="feature-list">
+                        <li>Write compelling cold emails</li>
+                        <li>Personalization strategies</li>
+                        <li>Response rate optimization</li>
+                        <li>Email templates and frameworks</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">📊</div>
+                    <h3>Bulk Data Collection</h3>
+                    <ul class="feature-list">
+                        <li>Frameworks to collect professor data</li>
+                        <li>Target thousands of professors</li>
+                        <li>Organized contact management</li>
+                        <li>Multi-country targeting</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">🎤</div>
+                    <h3>Interview Preparation</h3>
+                    <ul class="feature-list">
+                        <li>Stand out to professors</li>
+                        <li>Common questions and answers</li>
+                        <li>Technical interview prep</li>
+                        <li>Follow-up strategies post-interview</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">💰</div>
+                    <h3>Cost Optimization</h3>
+                    <ul class="feature-list">
+                        <li>Application fee waiver strategies</li>
+                        <li>Apply to US programs for free</li>
+                        <li>English test optimization</li>
+                        <li>Maximize output, minimize costs</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">📝</div>
+                    <h3>Application Strategy</h3>
+                    <ul class="feature-list">
+                        <li>PhD program applications</li>
+                        <li>Recommendation letter guidance</li>
+                        <li>Perfect timelines for each step</li>
+                        <li>When and how to take action</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">🌍</div>
+                    <h3>Global Targeting</h3>
+                    <ul class="feature-list">
+                        <li>US, Canada, Australia, UK</li>
+                        <li>Europe (multiple countries)</li>
+                        <li>Middle East and beyond</li>
+                        <li>Strategies for each region</li>
+                    </ul>
+                </div>
+
+                <div class="include-card">
+                    <div class="include-icon">👥</div>
+                    <h3>Premium Community Access</h3>
+                    <ul class="feature-list">
+                        <li>Regular fee waiver updates</li>
+                        <li>Advertised PhD positions</li>
+                        <li>Peer support and networking</li>
+                        <li>Ongoing resources</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <!-- Bonuses Section -->
+    <section class="bonuses-section">
         <div class="container">
-            <div class="grid-3">
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-envelope-open-text"></i></div>
-                    <h3>Auto-Outreach</h3>
-                    <p>Setup automated bulk email writing and follow-up systems. Send 500 emails/day and let the AI do the work.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <div class="section-header center">
+                <div class="section-tag">Exclusive Bonuses</div>
+                <h2>Premium AI Tools & Resources</h2>
+            </div>
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <div class="bonus-badge">Included</div>
                     <h3>AI Tools Access</h3>
-                    <p>Access Perplexity AI Pro and Gemini Pro (subject to availability) to supercharge your research and writing.</p>
+                    <p>Complementary access to premium AI tools at heavily discounted prices (subject to vendor availability)</p>
+                    <ul class="feature-list">
+                        <li>Perplexity AI Pro</li>
+                        <li>Gemini Pro</li>
+                        <li>Essential for your journey and beyond</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
-                    <h3>Live Mentorship</h3>
-                    <p>Two live action sessions every week with Waleed. We write emails, review profiles, and apply together.</p>
+                <div class="bonus-card">
+                    <div class="bonus-badge">Setup Included</div>
+                    <h3>Complete Automation Setup</h3>
+                    <p>We set up everything for you—software, APIs, email systems, and follow-up automation. <strong>Unlimited email sending capacity!</strong></p>
+                    <ul class="feature-list">
+                        <li>All software and tools</li>
+                        <li>API integrations</li>
+                        <li>Ready-to-use system</li>
+                        <li>Unlimited outreach framework</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="bonus-note">
+                <strong>Note:</strong> LLM credits for AI email generation are to be recharged by participants (~$1 for 2500 emails). We provide full support and guidance.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="bootcamp-process">
+        <div class="container">
+            <div class="section-header center">
+                <div class="section-tag">The Process</div>
+                <h2>From Application to PhD Offer</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Apply & Get Selected</h3>
+                    <p>We only take serious applicants ready to take action. Limited slots per cohort for close mentorship.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Live Action Sessions</h3>
+                    <p>2 live action sessions per week where all participants work together with Waleed. Flexible timings based on cohort consensus.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>AI System Setup</h3>
+                    <p>We help you set up the complete automated outreach and follow-up system with unlimited email capacity.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Mass Outreach Campaign</h3>
+                    <p>Start contacting hundreds (even thousands!) of professors worldwide with personalized, AI-written emails and automated follow-ups.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Interview & Applications</h3>
+                    <p>Handle professor interviews with our proven strategies. As you interact, your direction refines naturally.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Secure Your Offers</h3>
+                    <p>Receive and evaluate multiple PhD offers, then choose the best fit for your goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bootcamp-details" style="padding: 80px 0;">
+    <!-- Bootcamp Details -->
+    <section class="bootcamp-details">
         <div class="container">
-            <h2 class="section-title">What We Cover</h2>
-            <div class="check-list-box" style="max-width: 800px; margin: 0 auto;">
-                <ul class="check-list">
-                    <li><strong>Profile Marketing:</strong> Positioning your CV to stand out to professors.</li>
-                    <li><strong>Automated Follow-ups:</strong> The critical step most miss. We automate this.</li>
-                    <li><strong>Interview Prep:</strong> Guidelines to ace the interview once the professor replies.</li>
-                    <li><strong>Fee Waivers:</strong> Strategies to apply to US PhD programs for free.</li>
-                    <li><strong>English Tests:</strong> Mentorship on Duolingo/IELTS to save money and time.</li>
-                    <li><strong>6 Months Support:</strong> We are with you until you secure an offer.</li>
-                </ul>
+            <div class="section-header center">
+                <div class="section-tag">Bootcamp Details</div>
+                <h2>What to Expect</h2>
+            </div>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Duration</h3>
+                    <p><strong>Not Fixed—Until Goals Achieved</strong></p>
+                    <p>Minimum 6 months guaranteed support. We stay with you until you secure your funded PhD.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Format</h3>
+                    <p><strong>Cohort-Based Live Sessions</strong></p>
+                    <p>2 live action sessions per week. Work together with peers and directly with Waleed Abdullah.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Schedule</h3>
+                    <p><strong>Flexible Timings</strong></p>
+                    <p>Days and times set with mutual consensus of all bootcamp participants for maximum attendance.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Cohort Size</h3>
+                    <p><strong>Very Limited Slots</strong></p>
+                    <p>Small cohorts ensure personalized attention and tailored mentorship for each participant.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Requirements</h3>
+                    <p><strong>No Master's Degree Required</strong></p>
+                    <p>Bachelor's degree holders can apply. Our founder secured multiple PhD offers with just a Bachelor's!</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Pricing</h3>
+                    <p><strong>One-Time Upfront Fee</strong></p>
+                    <p>Single payment covers the entire bootcamp. Contact us for current pricing.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="cta-section">
+    <!-- Who This Is For -->
+    <section class="target-audience">
         <div class="container">
-            <h2 class="text-highlight">Limited Cohort Slots</h2>
-            <p style="margin-bottom: 30px;">We only accept serious applicants ready to take action. This is not a passive course.</p>
-            
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWuuuJr1bukrQ2evvsZx0vA4TUmICPddx5T-BBhduPOeOgtQ/viewform?usp=publish-editor" target="_blank" class="btn btn-primary">Apply Now</a>
-                <a href="https://wa.me/923144465003" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            <div class="audience-split">
+                <div class="audience-for">
+                    <h3>✅ This Bootcamp Is For You If:</h3>
+                    <ul>
+                        <li>You're serious about securing a fully-funded PhD</li>
+                        <li>You're ready to take massive action</li>
+                        <li>You want to avoid wasting money on expensive consultants</li>
+                        <li>You need a proven system, not generic advice</li>
+                        <li>You're willing to send hundreds of emails to professors</li>
+                        <li>You want to optimize costs at every step</li>
+                        <li>You're committed to the process for 6+ months</li>
+                        <li><strong>You want to try every possible opportunity so you never regret not trying</strong></li>
+                    </ul>
+                </div>
+                <div class="audience-not">
+                    <h3>❌ This Bootcamp Is NOT For You If:</h3>
+                    <ul>
+                        <li>You're just exploring options casually</li>
+                        <li>You expect results without taking action</li>
+                        <li>You're not willing to follow up consistently</li>
+                        <li>You want someone else to do all the work</li>
+                        <li>You're not committed to the full process</li>
+                        <li>You expect instant results</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Founder-Led -->
+    <section class="founder-led-section">
         <div class="container">
-            <div class="footer-logo">
-                <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770860254/png-logo-Icon-only-or-favicon-144x144-pixels_n61o7b.png" alt="Icon">
+            <div class="founder-led-content">
+                <div class="founder-led-text">
+                    <div class="section-tag">Founder-Led</div>
+                    <h2>Directly Mentored by Waleed Abdullah</h2>
+                    <p>This bootcamp is personally conducted by Waleed Abdullah—not delegated to junior staff or assistants. You get direct access to someone who has:</p>
+                    <ul class="check-list">
+                        <li>Contacted 1000+ professors worldwide</li>
+                        <li>Applied to 30+ PhD programs</li>
+                        <li>Secured numerous fully-funded PhD offers</li>
+                        <li><strong>Navigated the entire journey from Bachelor's to PhD acceptance (No Master's degree!)</strong></li>
+                        <li>Optimized costs and maximized success through trial and error</li>
+                        <li>Built the automated systems that actually work</li>
+                        <li>Tried every possible opportunity so you don't have to learn the hard way</li>
+                    </ul>
+                    <a href="index.html#founder" class="btn-secondary">Read Full Founder Story</a>
+                </div>
+                <div class="founder-led-stats">
+                    <div class="stat-box">
+                        <div class="stat-big">1000+</div>
+                        <p>Professors Contacted Globally</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-big">30+</div>
+                        <p>PhD Programs Applied</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-big">Multiple</div>
+                        <p>Funded PhD Offers Secured</p>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-big">20+</div>
+                        <p>Active Applications (Feb 2026)</p>
+                    </div>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="https://instagram.com/skilliestorg" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/923144465003" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://linktr.ee/skilliest" target="_blank"><i class="fas fa-link"></i></a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header center">
+                <h2>Frequently Asked Questions</h2>
             </div>
-            <p>&copy; 2026 Skilliest.org. All Rights Reserved.</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do I need a Master's degree to apply?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No! A Master's degree is NOT required. Waleed himself secured multiple PhD offers with just a Bachelor's degree—no Master's at all! He got accepted to almost all top MS programs but chose to pursue PhD directly. A Master's is a plus if you already have one, but it's absolutely not necessary. Our founder is living proof that Bachelor's to PhD is completely achievable!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How is this different from traditional consultants?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Traditional consultants give generic advice without execution systems. We provide AI-powered automation, automated follow-up systems, live action sessions, and proven frameworks built from real experience. Plus, we enable you to send unlimited emails and try every possible opportunity – something consultants never teach. This is execution-focused, not just advice.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I really send unlimited emails?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our framework allows unlimited email capacity. You can send 500 emails per day for free, and scale up as needed. Write ~2500 emails for just $1 using our LLM system. The key is our automated follow-up system that ensures no opportunity is missed. As you interact with professors, your direction refines naturally, and you connect with opportunities that wouldn't be possible without this system. Give it a try so you never regret not trying every possible chance!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What's the total cost including all expenses?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>One-time bootcamp fee (contact us for pricing). Additional minor costs: LLM credits for email generation (~$1 per 2500 emails), optional paid AI tools (heavily discounted if available from our vendor). We teach you how to minimize/eliminate application fees, test score sending costs, and other typical expenses. Waleed spent $6,000-$7,000 over 2+ years learning this the hard way – we help you avoid most of these costs!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long does it take to secure a PhD offer?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It varies based on your profile, field, and effort. Typically 6-12 months. The bootcamp continues until program objectives are achieved, with minimum 6 months guaranteed support. PhD application cycles are seasonal, so timing matters. With our unlimited outreach system, you can try every possible opportunity to maximize your chances!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Which countries and universities can I target?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Any country! US, Canada, Australia, UK, Europe (multiple countries), Middle East, and more. The system works globally. You'll learn how to target professors and programs anywhere in the world. Our unlimited email framework means you can connect with thousands of professors globally – opportunities that were previously impossible!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is the automated follow-up system really that important?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! It's the MOST CRITICAL part. Most people send one email and give up. Professors are busy—follow-ups every few days dramatically increase response rates. This is what actually converts emails into interviews and offers. Plus, as you interact with professors through follow-ups, your research direction gets refined naturally, making each subsequent email better. Our system is fully optimized for this!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>When does the next cohort start?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Applications are open now. Since this is the first batch, we'll start as soon as we shortlist applicants for our limited slots. Days and timings will be set with mutual consensus of all participants.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What if I don't have a strong research profile?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We help you build and present your profile in the best possible way. Profile optimization, CV building, defining research interests, and positioning yourself strategically are all part of the bootcamp. Remember, Waleed secured multiple offers with just a Bachelor's degree. With our unlimited outreach system, you can try numerous opportunities and refine your approach as you go. Give it a try – you'll never regret trying!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Why should I give this a try?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Because you'll never regret trying! Our unlimited email framework allows you to explore every possible opportunity without limitations. As you interact with professors worldwide, your direction naturally refines, and you discover opportunities you never knew existed. The system enables connections with thousands of professors globally – something impossible without this proven framework. Don't let fear of trying hold you back from your PhD dreams!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-box-large">
+                <h2>Limited Slots Available for Next Cohort</h2>
+                <p>We only accept serious applicants ready to take action. Small cohorts ensure personalized mentorship and maximum success rates. <strong>Give it a try and explore every opportunity – our unlimited outreach system ensures you never miss a chance!</strong></p>
+                <div class="cta-buttons-center">
+                    <a href="https://forms.gle/nMxmCnMzdEL4VUKG7" target="_blank" class="btn-primary btn-large">Apply to Bootcamp Now</a>
+                </div>
+                <p class="cta-subtext">Or get a free assessment of your profile first</p>
+                <a href="https://forms.gle/rr5n1KwGViJboKJd6" target="_blank" class="btn-secondary">Get Free Profile Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://res.cloudinary.com/dczbqmwzy/image/upload/v1770860256/PNG-logo-icon-only-8000x8000_pixels_qpnney.png" alt="Skilliest Icon" class="footer-logo-icon">
+                    <p>Cohort-based PhD mentorship platform built for serious applicants who want funded offers without wasting money.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="bootcamp.html">Bootcamp</a></li>
+                            <li><a href="index.html#founder">Founder Story</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="https://forms.gle/rr5n1KwGViJboKJd6" target="_blank">Free Assessment</a></li>
+                            <li><a href="#" id="footerGuideBtn">Free Guide</a></li>
+                            <li><a href="https://forms.gle/nMxmCnMzdEL4VUKG7" target="_blank">Apply Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://instagram.com/skilliestorg" target="_blank">Instagram</a></li>
+                            <li><a href="https://linktr.ee/skilliest" target="_blank">Linktree</a></li>
+                            <li><a href="https://wa.me/923144465003" target="_blank">WhatsApp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Skilliest.org. Built with expertise from real PhD application experience.</p>
+            </div>
         </div>
     </footer>
 
