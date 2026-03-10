@@ -183,17 +183,27 @@ section { padding: var(--section-padding); }
 .full-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 
 .success-card {
-    background: var(--bg-card);
+    /* Significantly lighter background to stand out against the #0a0a0a body */
+    background: #858585; 
     border-radius: 12px;
-    border: 1px solid var(--border-color);
+    /* A crisp, semi-transparent white border for a definitive edge */
+    border: 1px solid rgba(255, 255, 255, 0.25); 
+    /* Deep shadow to create physical distance from the background */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8); 
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     display: flex;
     flex-direction: column;
 }
+
 .success-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    /* Lightens up even more on hover for interactivity */
+    background: #2a2a2a; 
+    /* Snaps to your brand orange on hover */
+    border-color: var(--primary-orange);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(242, 135, 5, 0.2);
 }
 .success-card.theme-orange { border-top: 4px solid var(--primary-orange); }
 .success-card.theme-green { border-top: 4px solid #00ff88; }
@@ -211,6 +221,7 @@ section { padding: var(--section-padding); }
     aspect-ratio: 4/3; /* Enforce uniform thumbnail sizes */
     overflow: hidden;
     background: #000;
+    flex-grow: 1;
 }
 .card-img-wrapper img {
     width: 100%;
@@ -243,11 +254,12 @@ section { padding: var(--section-padding); }
     font-size: 0.9rem;
 }
 .success-card h4 {
-    padding: 1rem;
+    padding: 1.2rem 1rem; /* Added slightly more breathing room */
     margin: 0;
-    font-size: 1rem;
-    color: var(--white);
-    background: var(--bg-card-hover);
+    font-size: 1.05rem; 
+    font-weight: 700; /* Makes the text slightly bolder for better readability */
+    color: var(--white); 
+    background: #000000; /* Deep black grounds the card and contrasts perfectly with the white images */
     flex-grow: 1;
     border-top: 1px solid var(--border-color);
 }
