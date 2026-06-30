@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createCardHTML(story) {
         const theme = CATEGORY_MAP[story.category_tag] ? CATEGORY_MAP[story.category_tag].theme : 'theme-orange';
-        const titleText = story.title ? `<h4>${story.title}</h4>` : '';
+        const titleText = story.title ? `<div class="card-caption">${story.title}</div>` : '';
         // Package all images for this story
         const images = [];
         for(let i=1; i<=5; i++) {
@@ -228,10 +228,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const imgsJson = JSON.stringify(images).replace(/"/g, '&quot;');
         
         return `
-            <div class="success-card ${theme}" data-images="${imgsJson}">
-                <div class="card-img-wrapper">
-                    <img src="${story.image_1}" alt="${story.title || 'Success Story'}" loading="lazy">
-                    <div class="card-overlay"><span>Click to view</span></div>
+            <div class="success-card-container">
+                <div class="success-card ${theme}" data-images="${imgsJson}">
+                    <div class="card-img-wrapper">
+                        <img src="${story.image_1}" alt="${story.title || 'Success Story'}" loading="lazy">
+                        <div class="card-overlay"><span>Click to view</span></div>
+                    </div>
                 </div>
                 ${titleText}
             </div>
@@ -355,4 +357,22 @@ document.addEventListener('click', function(e) {
             target.setAttribute('rel', 'noopener noreferrer');
         }
     }
+
 });
+
+// ===== Scroll to Top Button =====
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
